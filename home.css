@@ -1,0 +1,152 @@
+.grid-container{
+  display:grid;
+  grid-template-areas:
+  'header header header header'
+  'menu main main main'
+  'footer footer footer footer';
+  margin:0;
+}
+
+
+  /* .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  } */
+
+  .nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    grid-area: menu;
+  }
+  
+  .nav-bar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-bar li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+ .nav-bar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  .header{
+    background-color:black;
+      grid-area: header;
+      color:white;
+      text-align: center;
+  }
+
+  .right {
+    float: left;
+    width: 75%;
+    height: 600px;
+    background-color: #f1f1f1;
+    border-left: 2px solid black;
+    padding-left: 20px;
+  }
+  #todo{
+    display: none;
+  }
+
+  #myInput {
+    width: 50%;
+    font-family:Comic Sans MS;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    position: relative;
+  }
+
+
+  .button{
+    width:auto;
+    font-family:Comic Sans MS;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    position: relative;
+  }
+
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: none;
+  }
+  #myUL li {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+  
+  #myUL li hover:not(.header) {
+    background-color: #eee;
+  }
+  #myTable{
+    margin-top: 20%;
+  }
+  
+
+  .footer{
+    position: fixed;
+    bottom:0;
+    background-color: #515b5e;
+    color: aliceblue;
+    padding: 4px 4px 4px 8px;
+    width:100%;
+    text-align: center;
+    grid-area: footer;
+}
+
+.footer ul {
+  position: relative;
+  list-style-type: none;
+}
+
+/* List Item inside footer list */
+.footer ul li {
+  float: left;
+  font-family: sans-serif;
+}
+
+
+/* Items in footer list */
+.footer-item{
+  display: block;
+  color: #d5dbde;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.footer-item:hover{
+  color: white;
+}
+  /* <style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+
+
+
+
+</style> */
